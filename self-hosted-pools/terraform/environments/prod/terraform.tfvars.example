@@ -1,0 +1,17 @@
+project_id = "your-gcp-project-id"
+region     = "us-central1"
+
+repo_url = "https://github.com/your-org/your-repo.git"
+
+# Build and push images first (see README), then set full URIs:
+worker_image    = "us-central1-docker.pkg.dev/your-gcp-project-id/cursor-self-hosted-pools/cursor-worker:latest"
+autoscaler_image = "us-central1-docker.pkg.dev/your-gcp-project-id/cursor-self-hosted-pools/cursor-autoscaler:latest"
+
+worker_pool_name   = "cursor-agents-pool"
+autoscaler_pool_name = "cursor-autoscaler-pool"
+pool_name_label    = "default"
+
+initial_instance_count = 1
+min_instances          = 1
+max_instances          = 5
+target_utilization     = 0.5

@@ -1,20 +1,19 @@
-# Self-hosted Cloud Run pools — plan todo
+# Self-hosted Cloud Run pools
 
 Plan: [docs/plans/2026-06-03-001-feat-self-hosted-cloud-run-pools-plan.md](../docs/plans/2026-06-03-001-feat-self-hosted-cloud-run-pools-plan.md)
 
-## Planning phase (current)
+## Planning phase
 
 - [x] Research Cursor Cloud Run worker pool docs and GCP/Terraform patterns
-- [x] Create `self-hosted-pools/` directory (planning artifacts only)
+- [x] Create `self-hosted-pools/` directory
 - [x] Write implementation plan in `docs/plans/`
-- [ ] Review plan with team; resolve open questions
-- [ ] Mark plan `status: approved`
+- [x] Mark plan approved
 
-## Implementation phase (after approval — do not start early)
+## Implementation phase
 
-- [ ] U2: Terraform foundation modules (APIs, IAM, registry, secrets)
-- [ ] U3: Worker container image
-- [ ] U4: Worker pool Terraform module
-- [ ] U5: Autoscaler container + Terraform module
-- [ ] U6: Staging/prod environments + optional VPC
-- [ ] U7: Complete README and verification checklist
+- [x] U2: Terraform foundation modules (APIs, IAM, registry, secrets)
+- [x] U3: Worker container image
+- [x] U4: Worker pool Terraform module
+- [x] U5: Autoscaler container + Terraform module
+- [x] U6: Staging/prod environments + tfvars examples
+- [x] U7: README and verification checklist

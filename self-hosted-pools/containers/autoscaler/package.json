@@ -1,0 +1,13 @@
+{
+  "name": "cursor-cloud-run-autoscaler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Polls Cursor fleet API and resizes a Cloud Run worker pool",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "google-auth-library": "^9.15.0"
+  }
+}

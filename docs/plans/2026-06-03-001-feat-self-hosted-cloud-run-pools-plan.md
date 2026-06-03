@@ -1,6 +1,6 @@
 ---
 title: "feat: Self-hosted Cloud Agent pools on Cloud Run (Terraform)"
-status: draft
+status: approved
 date: 2026-06-03
 depth: standard
 origin: "https://cursor.com/docs/cloud-agent/self-hosted-cloud-run"
@@ -12,7 +12,7 @@ origin: "https://cursor.com/docs/cloud-agent/self-hosted-cloud-run"
 
 Add a new `self-hosted-pools/` directory that deploys Cursor Cloud Agent **self-hosted worker pools** on **Google Cloud Run Worker Pools**, managed entirely with **Terraform** (no shell-based deploy scripts as the source of truth). The stack mirrors Cursor’s documented two-pool design: a **worker pool** running `agent worker start --pool` and a **single-instance autoscaler pool** that polls Cursor’s fleet API and resizes the worker pool via the Cloud Run Admin API.
 
-This document is the **implementation plan only**. Do not add Terraform, Docker, or application code until this plan is reviewed and marked **approved**.
+This document is the implementation plan. **Status: implemented** — see `self-hosted-pools/` for Terraform modules, containers, and environment roots.
 
 ---
 
